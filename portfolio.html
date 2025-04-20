@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #0078D4;
+      margin-bottom: 1rem;
+    }
+    .header h1 {
+      font-size: 2rem;
+      color: #0078D4;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      color: #0078D4;
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid #0078D4;
+      padding-bottom: 0.25rem;
+    }
+    .skills, .education, .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .project-card, .edu-card {
+      background: #f0f4f8;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .skills, .education, .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://via.placeholder.com/120" alt="Profile Photo" />
+      <h1>Jane Doe</h1>
+      <p>Data Scientist | Azure Cloud Specialist</p>
+    </div>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>I am a passionate data scientist with 4+ years of experience in leveraging data to drive insights and innovation. My expertise includes machine learning, cloud computing with Azure, and building scalable data pipelines.</p>
+    </div>
+
+    <div class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <div>Python, R, SQL</div>
+        <div>Azure Data Factory, Azure ML</div>
+        <div>Scikit-learn, Pandas, NumPy</div>
+        <div>Power BI, Tableau</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <strong>Azure-Powered Forecasting Model</strong>
+          <p>Developed a time series forecasting model using Azure ML and deployed it with Azure Functions for dynamic scalability.</p>
+        </div>
+        <div class="project-card">
+          <strong>Customer Segmentation</strong>
+          <p>Used clustering algorithms on customer data to derive actionable segments, improving campaign conversion by 22%.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <div class="education">
+        <div class="edu-card">
+          <strong>MSc in Data Science</strong>
+          <p>University of Techville, 2020</p>
+        </div>
+        <div class="edu-card">
+          <strong>BSc in Computer Science</strong>
+          <p>State College, 2017</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Jane Doe. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
